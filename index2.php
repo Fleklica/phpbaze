@@ -1,4 +1,4 @@
-<?php require('check.php'); ?>
+<?php session_start(); ?>
 <?php require('db.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,7 @@
         <p>
             <?php
             echo(session_id());
-            $_SESSION['info'];
+            echo($_SESSION['info']);
 
             $sql = "SELECT id, registracija, ime FROM automobili";
             $result = $conn->query($sql);
