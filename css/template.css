@@ -18,3 +18,8 @@ body {
 h1 {
     font-family: "Tahoma";
 }
+
+p
+{
+    color: red;
+}
